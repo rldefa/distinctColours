@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <div>
-            <p class='testsite'>Text</p>
-            <p>Distinct?</p>
-            <button>Yes</button>
-            <button>No</button>
+        <div class="canvas col-sm-12 col-md-12 col-lg-7">
+            <h1>Distinct Colors Data Collection</h1>
+            <p class='testsite'>Can you see me clearly?</p>
+            <div class="buttonCanvas">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
         </div>
     </body>
 </html>

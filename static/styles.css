@@ -4,3 +4,51 @@ p {
   font-size: small;
   font-weight: bolder;
 }
+
+.canvas{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.testsite{
+  text-align: center;
+  height: 200px;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.buttonCanvas{
+  text-align: center;
+}
+
+button{
+  width: 30%;
+  height: 40px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none !important;
+}
+
+button:hover{
+  border: 2px solid black;
+}
+
+.yes{
+  background-color: lightgreen;
+}
+
+.no{
+  background-color: salmon;
+}
+
+h1{
+  font-size: large;
+  text-align: center;
+}
+
+body{
+  padding:30px;
+}
+
