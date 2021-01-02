@@ -5,24 +5,24 @@ p {
   font-weight: bolder;
 }
 
-.canvas{
+.canvas {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-.testsite{
+.testsite {
   text-align: center;
   height: 200px;
   font-size: 2rem;
   padding: 3rem;
 }
 
-.buttonCanvas{
+.buttonCanvas {
   text-align: center;
 }
 
-button{
+button {
   width: 30%;
   height: 40px;
   border: none;
@@ -31,24 +31,23 @@ button{
   outline: none !important;
 }
 
-button:hover{
+button:hover {
   border: 2px solid black;
 }
 
-.yes{
+#yes {
   background-color: lightgreen;
 }
 
-.no{
+#no {
   background-color: salmon;
 }
 
-h1{
+h1 {
   font-size: large;
   text-align: center;
 }
 
-body{
-  padding:30px;
+body {
+  padding: 30px;
 }
-

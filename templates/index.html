@@ -10,9 +10,18 @@
             <h1>Distinct Colors Data Collection</h1>
             <p class='testsite'>Can you see me clearly?</p>
             <div class="buttonCanvas">
-                <button class="yes">Yes</button>
-                <button class="no">No</button>
+                <button id="yes" onclick="isDistinct()">Yes</button>
+                <button id="no" onclick="notDistinct()">No</button>
             </div>
         </div>
+        <script>
+            function isDistinct() {
+              document.getElementById("yes").style.color = "red";
+            }
+
+            function notDistinct() {
+              document.getElementById("no").style.color = "red";
+            }
+        </script>
     </body>
 </html>
