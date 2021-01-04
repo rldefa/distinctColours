@@ -3,7 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">    
+        <script type='text/javascript' src="{{ url_for('static', filename='index.js') }}"></script>
+        <script>
+            window.onload = changeColor
+        </script>    
     </head>
     <body>
         <div class="canvas col-sm-12 col-md-12 col-lg-7">
@@ -15,13 +19,7 @@
             </div>
         </div>
         <script>
-            function isDistinct() {
-              document.getElementById("yes").style.color = "red";
-            }
 
-            function notDistinct() {
-              document.getElementById("no").style.color = "red";
-            }
         </script>
     </body>
 </html>

@@ -35,9 +35,7 @@ class DataModel(db.Model):
         self.distinct = distinct
 
 
-app.route('/yeet', methods=['POST', 'GET'])
-
-
+@app.route('/yeet', methods=['POST', 'GET'])
 def handle_data():
     if request.method == 'POST':
         if request.is_json:
@@ -57,6 +55,7 @@ def handle_data():
             return {"error": "The request payload is not in JSON format"}
 
     elif request.method == 'GET':
+
         entries = DataModel.query.all()
         results = [
             {
