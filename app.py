@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://localhost/data"
@@ -40,6 +41,7 @@ def handle_data():
     if request.method == 'POST':
         if request.is_json:
             data = request.get_json()
+            data = json.loads(data)
             entry = DataModel(
                 c1_red=data['c1_red'],
                 c1_green=data['c1_green'],
